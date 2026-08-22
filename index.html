@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Escape Into Nature | Camping Adventure</title>
+  <title>Prarambh Cottages & Camp | Luxury Nature & Camping Stay in Nainital</title>
   <meta name="description"
-    content="Experience peace, adventure, and unforgettable nights under the stars. Book your camping stay now." />
+    content="Experience peace, adventure, luxury cottages, and unforgettable starry nights at Prarambh Cottages & Camp, Gethiya Padav, Nainital. Book your stay now." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,114 +18,249 @@
 <body>
   <header class="header">
     <nav class="container">
-      <a href="#" class="logo">Prarambh Cottages & Camp</a>
-      <ul class="nav-links">
+      <a href="#" class="logo">
+        <span class="logo-icon">🌲</span>
+        <span class="logo-text">Prarambh <span class="logo-sub">Cottages & Camp</span></span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#facilities">Facilities</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn-nav">Book Now</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content container">
-        <h1 class="hero-title">Escape Into Nature</h1>
-        <p class="hero-subtitle">Experience peace, adventure, and unforgettable nights under the stars</p>
+        <div class="hero-badge">✨ Nature & Peace at Gethiya Padav</div>
+        <h1 class="hero-title">Escape Into <span class="text-gradient">Pure Wilderness</span></h1>
+        <p class="hero-subtitle">Experience peaceful cottages, camping, and mountain sunsets at Gethiya Padav, Nainital.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary btn-large">Book Your Stay</a>
+          <a href="#gallery" class="btn-outline btn-large">Explore Gallery</a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-desc">Guest Satisfaction</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-desc">Peace & Tranquility</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">24 / 7</span>
+            <span class="stat-desc">Safe & Secure Campus</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section container">
       <div class="about-grid">
         <div class="about-text">
-          <h2>Experience the Wilderness</h2>
-          <p>Welcome to Prarambh Cottages & Camp, where the sound of the wind through the trees is your playlist and the
-            stars are
-            your ceiling. Located in the heart of the valley, we offer a perfect blend of adventure and tranquility.</p>
+          <span class="section-tag">ABOUT PRARAMBH</span>
+          <h2>Experience Uttarakhand's Untouched Wilderness</h2>
+          <p>Welcome to <strong>Prarambh Cottages & Camp</strong>, where mountain breezes, whispering pines, and panoramic valley views set the stage for your perfect escape. Located near Nainital at Gethiya Padav, we blend rustic outdoor adventure with modern comfort.</p>
           <ul class="features-list">
-            <li>Safe & Secure Environment</li>
-            <li>Guided Adventure Activities</li>
-            <li>Peaceful Nature Stay</li>
-            <li>Affordable Packages</li>
+            <li><span class="feat-icon">🏡</span> Delightful Cottages & Cozy Alpine Camps</li>
+            <li><span class="feat-icon">🛡️</span> Safe, Secure & Family-Friendly Campus</li>
+            <li><span class="feat-icon">🥾</span> Guided Mountain Treks & Nature Trails</li>
+            <li><span class="feat-icon">🔥</span> Evening Bonfires with Music</li>
+            <li><span class="feat-icon">🍽️</span> Authentic Hot Local Meals</li>
           </ul>
         </div>
-        <div class="about-image">
-          <img src="./assets/gallery-1.png" alt="Tent Interior">
+        <div class="about-image-wrapper">
+          <img src="./assets/gallery-2.png" alt="Prarambh Cottages Lodge Exterior" class="about-img">
+          <div class="floating-badge">
+            <span class="badge-icon">📍</span>
+            <div>
+              <strong>Gethiya Padav</strong>
+              <small>Nainital, Uttarakhand</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="section container">
-      <h2>Our Gallery</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="./assets/gallery-1.png" alt="Cozy Tent"></div>
-        <div class="gallery-item"><img src="./assets/gallery-2.png" alt="River View"></div>
-        <div class="gallery-item"><img src="./assets/gallery-3.png" alt="Campfire"></div>
-        <div class="gallery-item"><img src="./assets/gallery-4.png" alt="Trekking"></div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">VISUAL GALLERY</span>
+          <h2>Real Photos of Our Stay</h2>
+          <p class="section-desc">Take a genuine look at our cottages, guest rooms, balcony valley views, and facilities.</p>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item item-large">
+            <img src="./assets/gall.png" alt="Panoramic Mountain Balcony View">
+            <div class="gallery-caption">
+              <span>Valley View</span>
+              <h3>Panoramic Mountain Balcony View</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/gallery-2.png" alt="Main Cottage Lodge Exterior">
+            <div class="gallery-caption">
+              <span>Main Lodge</span>
+              <h3>Evening Cottage Terrace</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/gallery-1.png" alt="Cottage Courtyard & Garden">
+            <div class="gallery-caption">
+              <span>Courtyard</span>
+              <h3>Courtyard & Sunset Sky</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/gallery-3.png" alt="Deluxe Bedroom">
+            <div class="gallery-caption">
+              <span>Bedroom</span>
+              <h3>Cozy Deluxe Bedroom</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/gallery-5.png" alt="Spacious Cottage Suite with Sofa">
+            <div class="gallery-caption">
+              <span>Cottage Suite</span>
+              <h3>Spacious Room with Seating</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/gallery-4.png" alt="Clean Attached Private Washroom">
+            <div class="gallery-caption">
+              <span>Washroom</span>
+              <h3>Attached Private Bathroom</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Facilities Section -->
     <section id="facilities" class="section container">
-      <h2>Facilities</h2>
+      <div class="section-header">
+        <span class="section-tag">PREMIUM FACILITIES</span>
+        <h2>Designed For Your Comfort & Adventure</h2>
+      </div>
       <div class="facilities-grid">
         <div class="facility-card">
-          <div class="icon">⛺</div>
-          <h3>Comfortable Tents</h3>
-          <p>Spacious tents with bedding.</p>
+          <div class="facility-icon-bg">⛺</div>
+          <h3>Comfortable Tents & Cottages</h3>
+          <p>Well-furnished alpine tents and luxury cottages equipped with clean bedding and scenic valley views.</p>
         </div>
         <div class="facility-card">
-          <div class="icon">🔥</div>
-          <h3>Campfire</h3>
-          <p>Nightly bonfires with music.</p>
+          <div class="facility-icon-bg">🔥</div>
+          <h3>Bonfire & Music</h3>
+          <p>Gather around warm nightly campfires with music under crisp, clear starry skies.</p>
         </div>
         <div class="facility-card">
-          <div class="icon">🍽️</div>
-          <h3>Fresh Food</h3>
-          <p>Delicious local meals.</p>
+          <div class="facility-icon-bg">🍽️</div>
+          <h3>Fresh Local Dining</h3>
+          <p>Hygienically prepared, delicious home-style North Indian & Kumaoni dishes served hot.</p>
         </div>
         <div class="facility-card">
-          <div class="icon">🥾</div>
-          <h3>Trekking</h3>
-          <p>Guided nature walks.</p>
+          <div class="facility-icon-bg">🥾</div>
+          <h3>Trekking & Nature Trails</h3>
+          <p>Explore hidden pine forest routes, scenic viewpoints, and guided mountain walks.</p>
         </div>
       </div>
     </section>
 
+    <!-- CTA Banner Section -->
+    <section class="cta-banner">
+      <div class="container cta-content">
+        <span class="cta-tag">PLAN YOUR ESCAPE</span>
+        <h2>Ready for an Unforgettable Retreat?</h2>
+        <p>Book your cottage or camp stay at Prarambh today and experience nature like never before.</p>
+        <div class="cta-buttons">
+          <a href="tel:+919627443975" class="btn-primary btn-large">📞 Call +91 96274 43975</a>
+          <a href="mailto:prarambhcottages@outlook.com" class="btn-outline btn-large">✉️ Email Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="section container">
-      <h2>Contact Us</h2>
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2>Contact & Reservations</h2>
+        <p class="section-desc">Reach out to us for bookings, custom group packages, or directions.</p>
+      </div>
       <div class="contact-grid">
         <div class="contact-card">
-          <div class="icon">📍</div>
-          <h3>Address</h3>
-          <p>Gethiya Padav, Nainital, Uttrakhand, 263127</p>
+          <div class="contact-icon">📍</div>
+          <h3>Our Location</h3>
+          <p>Gethiya Padav, Near Nainital,<br>Uttarakhand, 263127</p>
+          <a href="https://maps.google.com/?q=Gethiya+Padav+Nainital" target="_blank" rel="noopener" class="card-action">View on Google Maps →</a>
+        </div>
+        <div class="contact-card highlight-card">
+          <div class="contact-icon">📞</div>
+          <h3>Call / WhatsApp</h3>
+          <p>Direct Reservation Line:<br><strong class="phone-number">+91 96274 43975</strong></p>
+          <a href="tel:+919627443975" class="btn-primary btn-sm">Call Now</a>
         </div>
         <div class="contact-card">
-          <div class="icon">📞</div>
-          <h3>Phone</h3>
-          <p><a href="tel:+919627443975" style="color: inherit; text-decoration: none;">+91 96274 43975</a></p>
-        </div>
-        <div class="contact-card">
-          <div class="icon">📧</div>
-          <h3>Email</h3>
-          <p><a href="mailto:prarambhcottages@outlook.com"
-              style="color: inherit; text-decoration: none;">prarambhcottages@outlook.com</a></p>
+          <div class="contact-icon">📧</div>
+          <h3>Email Us</h3>
+          <p>For inquiries & reservations:<br><strong>prarambhcottages@outlook.com</strong></p>
+          <a href="mailto:prarambhcottages@outlook.com" class="card-action">Send an Email →</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <a href="#" class="logo">Prarambh Cottages & Camp</a>
-        <p>Made with nature & adventure.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">🌲</span>
+            <span class="logo-text">Prarambh <span class="logo-sub">Cottages & Camp</span></span>
+          </a>
+          <p>Your peaceful escape into nature, surrounded by Nainital's serene valleys and pine forests.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Reservation</h4>
+          <p>📍 Gethiya Padav, Nainital, UK</p>
+          <p>📞 +91 96274 43975</p>
+          <p>📧 prarambhcottages@outlook.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prarambh Cottages & Camp. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Fullscreen Image Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+    <span class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Full View">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
 
   <script type="module" src="/script.js"></script>
 </body>
